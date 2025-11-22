@@ -1,23 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivan Tkachuk (ivtkac/gearxxed)</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ekmas/cs16.css@main/css/cs16.min.css">
     <style>
-        html, body {
+        html,
+        body {
             margin: 0;
             height: 100%;
         }
+
         body {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
         }
+
+        .flex {
+            display: flex;
+        }
+
+        .center {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .prog {
+            flex-direction: column;
+        }
     </style>
 </head>
+
 <body>
-    <h1>What are you trying to find here, darling?</h1>
+    <div class="flex center">
+        <h1>What are you trying to find here, darling?</h1>
+    </div>
+
+    <div class="flex center prog">
+        <h2>I guess I am programmer, ain't?</h2>
+        <div class="links">
+            <button class="cs-btn">
+                <a href="https://github.com/ivtkac">GitHub</a>
+            </button>
+            <button class="cs-btn">
+                <a href="https://code.gearxxed.com">Forgejo</a>
+            </button>
+        </div>
+    </div>
 </body>
+
 </html>
